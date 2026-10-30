@@ -55,6 +55,9 @@ function elementEnd(html, openIdx) {
 
 function fixUrls(html) {
   return html
+    // 微信图床按 Referer 防盗链，github.io 会被拦成“未经允许不可引用”，去掉 Referer 即可
+    .replace(/<head([^>]*)>/i, '<head$1><meta name="referrer" content="no-referrer" />')
+    .replace(/<img\b(?![^>]*referrerpolicy)/gi, '<img referrerpolicy="no-referrer"')
     .replace(/<script[\s\S]*?<\/script>/gi, '')
     .replace(/<meta[^>]*charset=[^>]*>/i, '<meta charset="utf-8" />')
     // 只补协议相对地址；已经带 http(s): 的不要重复加
