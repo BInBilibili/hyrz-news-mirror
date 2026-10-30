@@ -1,7 +1,7 @@
 // 列表 + 正文全部来自官网 JSON 接口；外壳来自 Edge --dump-dom 抓到的已渲染官方 DOM
 // （official_dom.html = 列表页，detail_dom.html = 正文页）
 // 用法：node build.mjs
-import { writeFileSync, readFileSync, existsSync } from 'node:fs';
+import { writeFileSync, readFileSync, existsSync, readdirSync } from 'node:fs';
 
 const BASE = 'https://apps.game.qq.com/wmp/v3.1/';
 const HEADERS = {
@@ -158,4 +158,9 @@ TABS.forEach((t, i) => {
 });
 writeFileSync(new URL('index.html', import.meta.url), first, 'utf8');
 writeFileSync(new URL('tab0.html', import.meta.url), first, 'utf8');
+
+// 把 CSS / 图片下载进 assets/，页面外壳不再请求腾讯域名
+const { localizeAll } = await import('./localize.mjs');
+const htmlFiles = readdirSync('.').filter((f) => f.endsWith('.html') && !f.includes('_dom')).sort();
+await localizeAll(htmlFiles);
 console.error('done');

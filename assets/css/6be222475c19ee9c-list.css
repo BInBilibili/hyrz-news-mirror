@@ -1,0 +1,271 @@
+.wrap {
+  background: url("../img/c9bae2ede4287717.jpg") no-repeat center 315px;
+  width: 100%;
+  /* padding-bottom: 30px; */
+}
+.page-head-box {
+  position: relative;
+  background: url("../img/e21afcfff93b8527.jpg") no-repeat center top;
+  width: 100%;
+  height: 295px;
+}
+.page-head-box .page-head {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.page-head-box .page-head .btn-back {
+  position: absolute;
+  left: 0;
+  top: 135px;
+  width: 149px;
+  height: 34px;
+  background: url("../img/187b5131aca196d0.webp") no-repeat center;
+}
+.page-head-box .page-head .current-location {
+  float: right;
+  margin-top: 45px;
+  margin-right: 10px;
+}
+.page-head-box .page-head .page-text {
+  color: #fff2d7;
+  font-size: 18px;
+  text-shadow: 0 0 4px 4px #3c1710;
+}
+.page-head-box .page-head .img-text {
+  position: absolute;
+  right: 0;
+  top: 110px;
+  height: 82px;
+}
+.content-box {
+  position: relative;
+  padding-bottom: 30px;
+}
+.list-box .tab-list {
+  padding-top: 10px;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.list-box .tab-list .list-item {
+  position: relative;
+  display: inline-block;
+}
+.list-box .tab-list .list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 1px;
+  height: 20px;
+  background: rgba(51, 51, 51, 0.3);
+}
+.list-box .tab-list .list-item:first-child::before {
+  display: none;
+}
+.list-box .tab-list .list-item.on a {
+  color: #d53d1b;
+}
+.list-box .tab-list .list-item.on::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -95px;
+  width: 191px;
+  height: 11px;
+  background: url("../img/a4f55be3a0ddcfe2.png") no-repeat center;
+}
+.list-box .tab-list a {
+  display: block;
+  width: 200px;
+  height: 100%;
+  padding: 10px 0;
+  color: #666;
+  font-size: 30px;
+}
+.list-box .tab-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.list-box .tab-content .content-list {
+  overflow: hidden;
+}
+.list-box .tab-content .content-list.video-list {
+  width: 1000px;
+  margin: 15px auto 0;
+}
+.list-box .tab-content .list-item {
+  position: relative;
+  height: 120px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.list-box .tab-content .list-item a {
+  display: block;
+  height: 100%;
+  padding: 45px 100px 45px 120px;
+}
+.list-box .tab-content .list-item .item-tag {
+  color: #3c1710;
+  font-size: 18px;
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: url("../img/6340a6097a8473b9.png") no-repeat center;
+  display: inline-block;
+  vertical-align: middle;
+}
+.list-box .tab-content .list-item .item-tag.item-tag-first{
+  background: url("../img/7206470e6cad61dc.png") no-repeat center/cover;
+  color: #ffffff;
+}
+.list-box .tab-content .list-item .item-title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.list-box .tab-content .list-item .item-desc {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.list-box .tab-content .list-item.video-item {
+  border-bottom: none;
+  float: left;
+  width: 322px;
+  height: 250px;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 30px;
+}
+.list-box .tab-content .list-item.video-item:nth-child(3n) {
+  margin-right: 0;
+}
+.list-box .tab-content .list-item.video-item a {
+  padding: 0;
+}
+.list-box .tab-content .list-item.video-item .video-box {
+  position: relative;
+  height: 189px;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+.list-box .tab-content .list-item.video-item .video-box .video-mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.list-box .tab-content .list-item.video-item .video-box .video-mask .icon-play {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 45px;
+  height: 56px;
+  background: url("../img/da5c2608bda5ef80.webp") no-repeat center;
+}
+.list-box .tab-content .list-item.video-item .video-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+}
+.list-box .tab-content .list-item.video-item .item-desc {
+  display: block;
+  color: #333;
+  font-size: 18px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-box .tab-content .list-item.video-item .item-info {
+  color: #666666;
+  font-size: 16px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.list-box .tab-content .list-item.video-item .item-info .item-subtitle {
+  float: left;
+}
+.list-box .tab-content .list-item.video-item .item-info .item-time {
+  float: right;
+}
+.list-box .tab-content .list-item.video-item:hover .video-mask {
+  display: block;
+}
+.list-box .paging-box {
+  width: 1000px;
+  margin: 45px auto 0;
+  text-align: center;
+}
+.list-box .paging-box .paging-btn-wrap {
+  width: 57px;
+  height: 56px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 40px;
+  text-indent: -9999px;
+}
+.list-box .paging-box .paging-btn {
+  display: block;
+  width: 57px;
+  height: 56px;
+  background: url("../img/599c1f35ac3d15e5.png") no-repeat;
+}
+.list-box .paging-box .paging-btn.btn-next {
+  background-image: url("../img/3b3fe68c54ca8bf8.png");
+}
+.list-box .paging-box .paging-info {
+  display: inline-block;
+  color: #666;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.strategy .tab-list a {
+  width: 262px;
+}
+.qrcode {
+  margin-top: 30px;
+}
+.qrcode ul {
+  width: 450px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.qrcode li {
+  width: 225px;
+  float: left;
+  font-size: 18px;
+  color: #0c182b;
+}
+.qrcode img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto 25px;
+}
+/* #t6Hl8#6297675A3044A115758FD86CE0222696 *//* #t6Hl8#E0316BF3732F16226B25EB15D070C799 */
